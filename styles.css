@@ -20,6 +20,7 @@
 
 #image-container1{
   display: flex;
+  position: relative;
   background-color: whitesmoke;
   border: 1px solid black;
   width: 90%;
@@ -31,6 +32,7 @@
 
 #image-container2{
   display: flex;
+  position: relative;
   background-color: whitesmoke;
   border: 1px solid black;
   width: 90%;
@@ -42,7 +44,8 @@
 }
 
 #image-container3{
-  display: flex;
+  display: block;
+  justify-content: center;
   background-color: whitesmoke;
   border: 1px solid black;
   width: 90%;
@@ -56,6 +59,8 @@
 
 #block-text{
   display: flex;
+  justify-content: left;
+  flex-direction: column;
   background-color: whitesmoke;
   border: 1px solid black;
   width: 90%;
@@ -69,6 +74,7 @@
 
 #block-text2{
   display: flex;
+  flex-direction: column;
   background-color: whitesmoke;
   border: 1px solid black;
   width: 90%;
@@ -81,20 +87,26 @@
 
 ul{
   padding: 10px;
+  text-align: left;
+ 
 }
 
 li{
-  padding: 1px;
+  padding: 10px;
+  text-align: left;
+  margin-left: 20px;
 }
 
 body {
   display: flex;
+  flex-direction: column;
   background-color: #f9f3f0;
 }
 
 p{
   padding: 10px;
-  justify-content: center;
+  text-align: center;
+
 }
 
 h1{
@@ -108,8 +120,7 @@ h3{
   font-family: Tahoma, Geneva, sans-serif;
   text-align: center;
   margin: auto;
-  padding: 15px;
-  
+  padding: 15px; 
 
 }
 
@@ -118,5 +129,32 @@ h5{
   text-align: center;
   font-weight: 400;
   color:#151837
+}
+
+img {
+  
+}
+
+.observation-and-interview {
+  width: 90%;
+  flex-direction: column;
+}
+
+.question {
+  padding: 10px;
+  cursor: pointer;
+  display: flex; 
+  justify-content: space-between;
+  text-align: center;
+}
+
+.answer {
+  display: none;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.answer.visible{
+  display: block;
 }
 

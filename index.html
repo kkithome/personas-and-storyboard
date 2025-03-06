@@ -12,7 +12,6 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML/CSS Studio</title>
-    <!-- import CSS styles -->
     <link rel="stylesheet" href="styles.css" /> 
   </head>
 
@@ -21,21 +20,22 @@
     <div id="logoBar">
       <h1>the stories of coke freestyle users</h1>
       <h5>By: Kaluki Kithome</h5>
+      <p> For easier navigation of the webpage please use either the hyperlinks 
+         included in the overview the sidebar menu. </p>
 
       <div id="content-heading">
       <h3> overview: </h3>
     </div>
     <div id="block-text">
-        <ul:before> In the following case study I: 
+        <ul> In the following case study I: 
           <li>observed and interviewed of coke freestyle users at Brown University</li>
-         <li>created two personas for coke freestyle users </li>
-         <li>created a storyboard describing a personas entire journey as coke freestyle user</li>
+          <li>created two personas for coke freestyle users </li>
+          <li>created a storyboard describing a personas entire journey as coke freestyle user</li>
         </ul>   
 
-        <p> For easier navigation of the webpage please use either the hyperlinks 
-         included in the overview or the sidebar menu. </p>
         
     </div>
+    
 
 
     <div id="content-heading">
@@ -49,6 +49,12 @@
         machine that is inside a dining hall at Brown University amongst other drink machines. 
         An annotated sketch of this machine is included below: </p>
 
+          <div id="'image-container3">
+            <img
+            src="assets-p&s/Coke Freestyle Sketch.png"
+            alt="Sketch of Coke Freestyle Interface with annotations reagrding how users interact with it">
+          </div>
+
     </div>
 
     <div id="content-heading">
@@ -59,8 +65,78 @@
         observed the interactions of 3 users. Following the observations I also 
         interviewed the same three users. The observations takeaways, interview questions, 
         and summarized responses can be found in the dropdown below. </p>
+
+        <div class="observation-and-interview">
+          <div class="question" onclick="toggleAnswer(0)">
+            <span class="arrow">🔽</span> 
+            Observation Takeaways: 
+          </div>
+          <div class="answer">
+            RESPONSES
+          </div>
+          <div class="question" onclick="toggleAnswer(1)">
+            <span class="arrow">🔽</span> How often do you use the Coke Freestyle machine?
+          </div>
+          <div class="answer">
+            RESPONSES
+          </div>
+
+          <div class="question" onclick="toggleAnswer(2)">
+            <span class="arrow">🔽</span> What time of day of day do you typically use the Coke Freestyle machine?
+          </div>
+          <div class="answer">
+            RESPONSES
+          </div>
+
+          <div class="question" onclick="toggleAnswer(3)">
+            <span class="arrow">🔽</span>Are you typically alone or with friends when you use Coke Freestyle machines?
+          </div>
+          <div class="answer">
+            RESPONSES
+          </div>
+
+          <div class="question" onclick="toggleAnswer(4)">
+            <span class="arrow">🔽</span>Why did you chose the Coke Freestyle machine over the other drink dispensers?
+          </div>
+          <div class="answer">
+            RESPONSES
+          </div>
+
+          <div class="question" onclick="toggleAnswer(5)">
+            <span class="arrow">🔽</span>
+            How and when do you detemine what drink you get when using the Coke Freestyle machine?
+          </div>
+          <div class="answer">
+            RESPONSES
+          </div>
+
+          <div class="question" onclick="toggleAnswer(6)">
+            <span class="arrow">🔽</span>
+            Have you ever abandoned your selection or changed you mind while using the Coke Freestyle machine? If so, why?
+          </div>
+          <div class="answer">
+            RESPONSES
+          </div>
+
+          <div class="question" onclick="toggleAnswer(7)">
+            <span class="arrow">🔽</span>
+            When using the Coke Freestyle machine, was there anything that made getting your drink easy or difficult?
+          </div>
+          <div class="answer">
+            RESPONSES
+          </div>
+
+          <div class="question" onclick="toggleAnswer(8)">
+            <span class="arrow">🔽</span>
+            Do you typically get the same drink or do you experiment with new flavors?
+          </div>
+          <div class="answer">
+            RESPONSES
+          </div>
+        </div>
+      </div>
       
-    </div>
+
 
       <div id="examples"></div>
 
@@ -78,33 +154,12 @@
 
 
     <div id= content-heading>
-      <h3> storyboards</h3>
+      <h3> storyboards </h3>
 
     </div>
 
     <div id ="image-container3">
       
-    </div>
-
-    <div id= content-heading>
-      <h3> state models </h3>
-    </div>
-
-    <div id ="image-container">
-      
-      alt="state models"
-      width="100%"
-      height="100%">
-    </div>
-
-    <div id=content-heading>
-      <h3> reflection </h3>
-    </div>
-
-    <div id ="block-text2">
-      
-      width="100%"
-      height="100%">
     </div>
 
   
@@ -114,6 +169,7 @@
     </div>
     </div>
     </div>
+    <script src="script.js"></script>
   </body>
 
 </html>
