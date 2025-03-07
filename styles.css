@@ -1,89 +1,62 @@
 #logoBar{
   width: 100vw;
   height: 100vh;
+  align-items: center;
 }
 #siteLogo{
   width: 100%;
 }
 
 #content-heading{
-  display: flex;
   background-color: #b1e1cf;
   border: 1px solid black;
-  width: 90%;
   height: 7%;
-  padding: 1px;
-  margin-right: 40px;
-  margin-left: 40px;
-  
+  padding: 1px; 
 }
 
-#image-container1{
+#content-heading, #block-text {
+  width: 95%;
+  max-width: 100%;
+  margin-right: 40px;
+  margin-left: 40px;
   display: flex;
-  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+
+#block-text{
   background-color: whitesmoke;
   border: 1px solid black;
-  width: 90%;
-  height: 60%;
-  margin-bottom: 20px;
-  margin-right: 40px;
-  margin-left: 40px;
+  min-width: fit-content;
+  min-height: fit-content;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-#image-container2{
+
+#image-container{
   display: flex;
-  position: relative;
-  background-color: whitesmoke;
-  border: 1px solid black;
-  width: 90%;
-  height: 30%;
-  padding: 2px;
-  margin-right: 40px;
-  margin-left: 40px;
-  margin-bottom: 20px;
-}
-
-#image-container3{
-  display: block;
   justify-content: center;
   background-color: whitesmoke;
   border: 1px solid black;
   width: 90%;
-  height: 120%;
+  height: auto;
   padding: 2px;
   margin-right: 40px;
   margin-left: 40px;
   margin-bottom: 10px;
 }
 
-
-#block-text{
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  background-color: whitesmoke;
-  border: 1px solid black;
-  width: 90%;
-  height: 60%;
-  margin-right: 40px;
-  margin-left: 40px;
-  margin-bottom: 10px;
+.image-container3 img{
+  width: 95%;
+  height: auto;
+  object-fit: contain;
+  
 }
 
 
 
-#block-text2{
-  display: flex;
-  flex-direction: column;
-  background-color: whitesmoke;
-  border: 1px solid black;
-  width: 90%;
-  height: 60%;
-  padding: 2px;
-  margin-right: 40px;
-  margin-left: 40px;
-  margin-bottom: 10px;
-}
+
 
 ul{
   padding: 10px;
@@ -106,6 +79,8 @@ body {
 p{
   padding: 10px;
   text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
 
 }
 
@@ -116,12 +91,19 @@ h1{
 
 }
 
-h3{
+h2{
   font-family: Tahoma, Geneva, sans-serif;
   text-align: center;
   margin: auto;
   padding: 15px; 
 
+}
+
+h3{
+  font-family: Tahoma, Geneva, sans-serif;
+  text-align: center;
+  margin: auto;
+  padding: 15px; 
 }
 
 h5{
@@ -131,21 +113,61 @@ h5{
   color:#151837
 }
 
-img {
-  
+.question-container {
+  display: flex;
+  background-color: #ebedec;
+  border: 1px solid black;
+  width: 100%;
+  height: 7%;
+  padding: 5px;
+  margin: auto;
+  align-items: center;
 }
+
+.answer-container.answer.visible {
+  display: flex;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  width: 90%;
+  height: 7%;
+  padding: 10px;
+  margin-right: 40px;
+  margin-left: 40px;
+  align-items: center;
+
+}
+
+.section-container{
+  width: 90vw;
+  margin: auto;
+  align-items: center;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: center;
+  text-align: center;
+  padding: 1%;
+}
+
+
 
 .observation-and-interview {
   width: 90%;
   flex-direction: column;
+  align-items: center;
+  height: 90%
+
+}
+
+.question, .answer {
+  text-align: center;
 }
 
 .question {
-  padding: 10px;
+  padding: 5px;
   cursor: pointer;
   display: flex; 
-  justify-content: space-between;
-  text-align: center;
 }
 
 .answer {
@@ -158,3 +180,63 @@ img {
   display: block;
 }
 
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  left: 1rem;
+  padding: 4px;
+  border: #151837 solid px;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.arrow {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.menu {
+  position: fixed;
+  transform: translateX(-100%);
+  transition: transform 0.2s ease-in-out;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  background: rgb(173, 196, 230);
+  color: #151837;
+  border: 3px solid #151837;
+  list-style: none;
+  padding-top: 2rem;
+}
+
+.showMenu {
+  transform: translateX(0);
+}
+
+.menuItem {
+  display: block;
+  color: black;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 10px;
+  align-items: center;
+  border: 1px solid #151837;
+  transition: background-color 0.3s ease;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menuItem:hover {
+  background-color: aliceblue;
+  padding: 20px;
+}
+
+.menuItem:active {
+  background-color: rgb(41, 42, 43);
+}

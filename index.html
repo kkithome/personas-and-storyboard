@@ -11,6 +11,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>HTML/CSS Studio</title>
     <link rel="stylesheet" href="styles.css" /> 
   </head>
@@ -19,47 +20,60 @@
 
     <div id="logoBar">
       <h1>the stories of coke freestyle users</h1>
-      <h5>By: Kaluki Kithome</h5>
-      <p> For easier navigation of the webpage please use either the hyperlinks 
-         included in the overview the sidebar menu. </p>
+         <ul class="menu">
+          <h2> Navigation Menu: </h2>
+          <li><a class="menuItem" href="overview"> overview</a></li>
+          <li><a class="menuItem" href="interface"> the interface</a></li>
+          <li><a class="menuItem" href="user-analysis"> user analysis</a></li>
+          <li><a class="menuItem" href="personas"> personas</a></li>
+          <li><a class="menuItem" href="storyboards">storyboards</a></li>
+         </ul>
 
-      <div id="content-heading">
-      <h3> overview: </h3>
-    </div>
-    <div id="block-text">
-        <ul> In the following case study I: 
-          <li>observed and interviewed of coke freestyle users at Brown University</li>
-          <li>created two personas for coke freestyle users </li>
-          <li>created a storyboard describing a personas entire journey as coke freestyle user</li>
-        </ul>   
+         <button class="hamburger">
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
 
-        
-    </div>
+
+
     
+         <div class= "section-container">
+          <div id="content-heading">
+            <h3> overview: </h3>
+          </div>
+      
+      <div id="block-text">
+        <p> In this case study I observed and interviewed of Coke Freestyle users at 
+          Brown University. After analyzing the takeaways from both the observation and interview, 
+          created two personas for coke freestyle users. Using one of those personas,
+          I created a storyboard describing a personas entire journey as coke freestyle users. 
+        </p>
+      </div>
+    </div>
 
-
+  <div class="section-container"> 
     <div id="content-heading">
       <h3> the interface: coke freestyle </h3>
-      
     </div>
 
     <div id="block-text">
       <p> Before diving into the users themselves, it is important to discuss the 
-        interface they interacted with. The participants of this case study interacted with a Coca-Cola Freestyle 
-        machine that is inside a dining hall at Brown University amongst other drink machines. 
+        interface they interacted with: Coke Freestyle.
         An annotated sketch of this machine is included below: </p>
-
-          <div id="'image-container3">
+          <div id="image-container3">
             <img
             src="assets-p&s/Coke Freestyle Sketch.png"
             alt="Sketch of Coke Freestyle Interface with annotations reagrding how users interact with it">
           </div>
+        </div>
+      </div>
+    
 
-    </div>
-
+   <div class="section-container">
     <div id="content-heading">
       <h3> user analysis: </h3>
     </div>
+
     <div id= block-text>
       <p> To gain a more in-depth understanding of Coke Freestyle users, I 
         observed the interactions of 3 users. Following the observations I also 
@@ -67,106 +81,152 @@
         and summarized responses can be found in the dropdown below. </p>
 
         <div class="observation-and-interview">
-          <div class="question" onclick="toggleAnswer(0)">
-            <span class="arrow">🔽</span> 
-            Observation Takeaways: 
-          </div>
-          <div class="answer">
-            RESPONSES
-          </div>
-          <div class="question" onclick="toggleAnswer(1)">
-            <span class="arrow">🔽</span> How often do you use the Coke Freestyle machine?
-          </div>
-          <div class="answer">
-            RESPONSES
+          <div class="question-container">
+            <div class="question" onclick="toggleAnswer(0)">
+              <span class="arrow">🔽</span>
+              Observation Takeaways:
+            </div>
           </div>
 
-          <div class="question" onclick="toggleAnswer(2)">
-            <span class="arrow">🔽</span> What time of day of day do you typically use the Coke Freestyle machine?
-          </div>
-          <div class="answer">
-            RESPONSES
-          </div>
 
-          <div class="question" onclick="toggleAnswer(3)">
-            <span class="arrow">🔽</span>Are you typically alone or with friends when you use Coke Freestyle machines?
-          </div>
-          <div class="answer">
-            RESPONSES
-          </div>
-
-          <div class="question" onclick="toggleAnswer(4)">
-            <span class="arrow">🔽</span>Why did you chose the Coke Freestyle machine over the other drink dispensers?
-          </div>
-          <div class="answer">
-            RESPONSES
-          </div>
-
-          <div class="question" onclick="toggleAnswer(5)">
-            <span class="arrow">🔽</span>
-            How and when do you detemine what drink you get when using the Coke Freestyle machine?
-          </div>
-          <div class="answer">
-            RESPONSES
-          </div>
-
-          <div class="question" onclick="toggleAnswer(6)">
-            <span class="arrow">🔽</span>
-            Have you ever abandoned your selection or changed you mind while using the Coke Freestyle machine? If so, why?
-          </div>
-          <div class="answer">
-            RESPONSES
-          </div>
-
-          <div class="question" onclick="toggleAnswer(7)">
-            <span class="arrow">🔽</span>
-            When using the Coke Freestyle machine, was there anything that made getting your drink easy or difficult?
-          </div>
-          <div class="answer">
-            RESPONSES
-          </div>
-
-          <div class="question" onclick="toggleAnswer(8)">
-            <span class="arrow">🔽</span>
-            Do you typically get the same drink or do you experiment with new flavors?
-          </div>
+        <div class="answer-container">
           <div class="answer">
             RESPONSES
           </div>
         </div>
+
+
+         <div class="question-container">
+          <div class="question" onclick="toggleAnswer(1)">
+            <span class="arrow">🔽</span> How often do you use the Coke Freestyle machine?
+          </div>
+          </div>
+
+          <div class="answer-container">
+            <div class="answer">
+              RESPONSES
+            </div>
+          </div>
+
+          <div class="question-container">
+            <div class="question" onclick="toggleAnswer(2)">
+              <span class="arrow">🔽</span> What time of day of day do you typically use the Coke Freestyle machine?
+            </div>
+          </div>
+
+          <div class="answer-container">
+            <div class="answer">
+            RESPONSES
+          </div>
+        </div>
+
+        <div class="question-container">
+          <div class="question" onclick="toggleAnswer(3)">
+            <span class="arrow">🔽</span>Are you typically alone or with friends when you use Coke Freestyle machines?
+          </div>
+        </div> 
+
+        <div class="answer-container">
+          <div class="answer">
+            RESPONSES
+          </div>
+        </div>
+        
+        <div class="question-container">
+          <div class="question" onclick="toggleAnswer(4)">
+            <span class="arrow">🔽</span>Why did you chose the Coke Freestyle machine over the other drink dispensers?
+          </div>
+        </div>
+        
+        <div class="answer-container">
+          <div class="answer">
+            RESPONSES
+          </div>
+        </div>
+
+          <div class="question-container">
+            <div class="question" onclick="toggleAnswer(5)">
+            <span class="arrow">🔽</span>
+            How and when do you determine what drink you get when using the Coke Freestyle machine?
+          </div>
+        </div>
+
+        <div class="answer-container">
+          <div class="answer">
+            RESPONSES
+          </div>
+        </div>
+        
+        <div class="question-container">
+            <div class="question" onclick="toggleAnswer(6)">
+            <span class="arrow">🔽</span>
+            Have you ever abandoned your selection or changed you mind while 
+            using the Coke Freestyle machine? If so, why?
+          </div>
+        </div>
+
+        <div class="answer-container">
+          <div class="answer">
+            RESPONSES
+          </div>
+        </div>
+
+        <div class="question-container">
+          <div class="question" onclick="toggleAnswer(7)">
+            <span class="arrow">🔽</span>
+            When using the Coke Freestyle machine, was there anything that made getting your drink easy or difficult?
+          </div>
+        </div>
+
+        <div class="question-container">
+          <div class="question" onclick="toggleAnswer(7)">
+            <span class="arrow">🔽</span>
+            When using the Coke Freestyle machine, was there anything that made getting your drink easy or difficult?
+          </div>
+        </div>
+
+        <div class="answer-container">
+          <div class="answer">
+            RESPONSES
+          </div>
+        </div>
+
+        <div class="question-container">
+          <div class="question" onclick="toggleAnswer(8)">
+            <span class="arrow">🔽</span>
+            Do you typically get the same drink or do you experiment with new flavors?
+          </div>
+        </div>
+
+        <div class="answer-container">
+          <div class="answer">
+            RESPONSES
+          </div>
+        </div>
+        </div>
       </div>
+    </div>
       
-
-
-      <div id="examples"></div>
-
+   <div class="section-container">
     <div id="content-heading">
       <h3> personas </h3>
     </div>
-      <div id ="block-text">
-        <p> Based on these the takeaways described in the user analysis section, I constructed two personas: INSERT NAMES HERE
-         These personas are represetned in four-quadrant empathy maps below.</p>
-
-        
-        
-
+    
+    <div id ="block-text">
+      <p> Based on these the takeaways described in the user analysis section, I constructed two personas: Impatient Immanuel and Social Sophia.
+        These personas are represetned in four-quadrant empathy maps below.</p>
       </div>
-
-
-    <div id= content-heading>
-      <h3> storyboards </h3>
-
     </div>
 
-    <div id ="image-container3">
-      
+
+    <div class="section-container">
+      <div id= content-heading>
+        <h3> storyboards </h3>
+      </div>
+      <div id="block-text">
+      </div>
     </div>
 
-  
-
-    </div>
-
-    </div>
     </div>
     </div>
     <script src="script.js"></script>
