@@ -1,26 +1,17 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const questions = document.querySelectorAll(".question");
+const questions = document.querySelectorAll(".question");
+questions.forEach( function (question) {
+  question.addEventListener("click", function () {
+    const answerId = this.getAttribute('data-target');
+    const answer = document.getElementById(answerId);
 
-  questions.forEach((question) => {
-    question.addEventListener("click", function () {
-        const questionContainer = this.closest('.question-container');
-        const answerContainer = questionContainer.querySelector('answer-container');
+    if (answer.style.display === 'none' || answer.style.display === '') {
+      answer.style.display = 'block';
 
-
-        if (answerContainer && answerContainer.classList.contains("answer-container")) {
-            answerContainer.classList.toggle("visible");
-
-            const arrow = this.querySelector(".arrow");
-            
-            if (answerContainer.classList.contains("visible")) {
-                arrow.textContent = " 🔼 ";
-            } else {
-                arrow.textContent = " 🔽 ";
-            }
-        }
-    });
-});
-});
+    } else { 
+      answer.style.display = 'none';
+    }
+  })
+})
 
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
@@ -46,4 +37,15 @@ hamburger.addEventListener("click", function() {
 
 menuItems.forEach(function (menuItem) {
   menuItem.addEventListener("click", toggleMenu);
+});
+
+menuItems.forEach(function (menuItem) {
+  event.preventDefault();
+
+  const targetSection = document.querySelector(menuItem.getAttribute("href"));
+  targetSection.scrollIntoView({
+    behavior: "smooth", 
+    block: "start"
+  }); 
+  toggleMenu()
 });

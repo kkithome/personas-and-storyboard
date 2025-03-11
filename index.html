@@ -1,11 +1,3 @@
-  <!-- TO RUN IN BROWSER:
-    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
-    2. Right click html file and either run in default browser or another browser
-  -->
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,10 +15,10 @@
          <ul class="menu">
           <h2> Navigation Menu: </h2>
           <li><a class="menuItem" href="#overview">overview</a></li>
-          <li><a class="menuItem" href="#interface">the interface</a></li>
-          <li><a class="menuItem" href="#user-analysis">user analysis</a></li>
+          <li><a class="menuItem" href="#the interface: coke freestyle">the interface</a></li>
+          <li><a class="menuItem" href="#user analysis">user analysis</a></li>
           <li><a class="menuItem" href="#personas">personas</a></li>
-          <li><a class="menuItem" href="#storyboards">storyboards</a></li>
+          <li><a class="menuItem" href="#storyboards">storyboard</a></li>
          </ul>
 
          <button class="hamburger">
@@ -77,61 +69,60 @@
     <div id= block-text>
       <p> To gain a more in-depth understanding of Coke Freestyle users, I 
         observed the interactions of 3 users. Following the observations I also 
-        interviewed the same three users. The observations takeaways, interview questions, 
-        and summarized responses can be found in the dropdown below. </p>
+        interviewed the same three users. The interview questions are listed below. 
+        Click on any question to hide the summarized reponses. </p>
 
         <div class="observation-and-interview">
           <div class="question-container">
-            <div class="question">
-              <span class="arrow">🔽</span>
+            <div class="question" data-target="answer-0">
               Observation Takeaways:
             </div>
           </div>
 
 
-        <div class="answer-container">
+        <div class="answer-container" id="answer-0">
           <div class="answer">
-            <ul>
-              <li User #1: alone during interactoin, quick interaction, seemed familiar with the interface, quickly made selection without contemplation ></li>
+              <ul>
+              <li> User #1: alone during interaction, quick interaction, seemed familiar with the interface, quickly made selection without contemplation</li>
               <li> User #2: joked around with friends while using machine, freind commented on their choices but did not effect selection, chose to get water</li>
-              <li> User #3: with friend, spent a lot of time on teh selection page, made initial choice then switched</li>
-            </ul>>
+              <li> User #3: with friend, spent a lot of time on the selection page, made initial choice then switched</li>
+            </ul>
           </div>
         </div>
 
 
          <div class="question-container">
-          <div class="question">
-            <span class="arrow">🔽</span> How often do you use the Coke Freestyle machine?
+          <div class="question" data-target="answer-1">
+            1. How often do you use the Coke Freestyle machine?
           </div>
           </div>
 
-          <div class="answer-container">
+          <div class="answer-container" id="answer-1">
             <div class="answer">
               <p>All interviews use the Coke Freestyle machine every time they visit the vending machine, 
                 it is located in. One user is now off of the University meal plan so their usage has waned. </p>
             </div>
           </div>
 
-          <div class="question-container">
-            <div class="question">
-              <span class="arrow">🔽</span> What time of day of day do you typically use the Coke Freestyle machine?
+          <div class="question-container" >
+            <div class="question" data-target="answer-2">
+              2. What time of day of day do you typically use the Coke Freestyle machine?
             </div>
           </div>
 
-          <div class="answer-container">
+          <div class="answer-container" id="answer-2">
             <div class="answer">
             <p>The users typically use the machine around lunch, between classes, or for dinner.</p>
           </div>
         </div>
 
         <div class="question-container">
-          <div class="question">
-            <span class="arrow">🔽</span>Are you typically alone or with friends when you use Coke Freestyle machines?
+          <div class="question" data-target="answer-3">
+            3. Are you typically alone or with friends when you use Coke Freestyle machines?
           </div>
         </div> 
 
-        <div class="answer-container">
+        <div class="answer-container" id="answer-3">
           <div class="answer">
             <p>One user is typically alone when using it, one is often is 
               in line with friends and for the other it is roughly 50/50. </p>
@@ -139,56 +130,53 @@
         </div>
         
         <div class="question-container">
-          <div class="question">
-            <span class="arrow">🔽</span>Why did you chose the Coke Freestyle machine over the other drink dispensers?
+          <div class="question" data-target="answer-4">
+            4. Why did you chose the Coke Freestyle machine over the other drink dispensers?
           </div>
         </div>
         
-        <div class="answer-container">
+        <div class="answer-container" id="answer-4">
           <div class="answer">
             <p>The other drink dispenser options on campus are much more limited
               and the Coke Freestyle machine has the best water on campus, the 
-              best temperature of drinks, and the most fun interface.</p>>
+              best temperature of drinks, and the most fun interface.</p>
           </div>
         </div>
 
           <div class="question-container">
-            <div class="question">
-            <span class="arrow">🔽</span>
-            How and when do you determine what drink you get when using the Coke Freestyle machine?
+            <div class="question"data-target="answer-5">
+            5. How and when do you determine what drink you get when using the Coke Freestyle machine?
           </div>
         </div>
 
-        <div class="answer-container">
+        <div class="answer-container" id="answer-5">
           <div class="answer">
             <p>One user will always get the same thing unless they are with 
               people who influence them to get something different. The other 
-              two vary their drink choices depending on how they are feeling.</p>>
+              two vary their drink choices depending on how they are feeling.</p>
           </div>
         </div>
 
         <div class="question-container">
-            <div class="question">
-            <span class="arrow">🔽</span>
-            Do you typically use the Coke Freestyle machine before or after getting your food?
+            <div class="question" data-target="answer-6">
+            6. Do you typically use the Coke Freestyle machine before or after getting your food?
           </div>
         </div>
 
-        <div class="answer-container">
+        <div class="answer-container" id="answer-6">
           <div class="answer">
-            <p>All users typically use the machine after getting their food.</p>>
+            <p>All users typically use the machine after getting their food.</p>
           </div>
         </div>
         
         <div class="question-container">
-            <div class="question">
-            <span class="arrow">🔽</span>
-            Have you ever abandoned your selection or changed you mind while 
+            <div class="question" data-target="answer-7">
+            7. Have you ever abandoned your selection or changed you mind while 
             using the Coke Freestyle machine? If so, why?
           </div>
         </div>
 
-        <div class="answer-container">
+        <div class="answer-container" id="answer-7">
           <div class="answer">
             <p>Some users abandon their selection when something goes wrong 
               during the interaction, and there is a long line. </p>
@@ -199,13 +187,12 @@
 
 
         <div class="question-container">
-          <div class="question">
-            <span class="arrow">🔽</span>
-            When using the Coke Freestyle machine, was there anything that made getting your drink easy or difficult?
+          <div class="question" data-target="answer-8">
+            8. When using the Coke Freestyle machine, was there anything that made getting your drink easy or difficult?
           </div>
         </div>
 
-        <div class="answer-container">
+        <div class="answer-container" id="answer-8">
           <div class="answer">
             <p>The older version of the Coke Freestyle machine used to misclick 
               and took a long time to register user selections creating a frustrating user experience. </p>
@@ -213,17 +200,16 @@
         </div>
 
         <div class="question-container">
-          <div class="question">
-            <span class="arrow">🔽</span>
-            Do you typically get the same drink or do you experiment with new flavors?
+          <div class="question" data-target="answer-9">
+            9. Do you typically get the same drink or do you experiment with new flavors?
           </div>
         </div>
 
-        <div class="answer-container">
+        <div class="answer-container" id="answer-9">
           <div class="answer">
             <p>Two of the users stick to the same two drink options. The other 
               one likes to experiment with their drink choices because the 
-              interface allows for it. </p>>
+              interface allows for it. </p>
           </div>
         </div>
         </div>
@@ -231,22 +217,52 @@
     </div>
       
    <div class="section-container" id="personas">
+  
     <div id="content-heading">
-      <h3> personas </h3>
+      <h3> persona #1: Driven Donna </h3>
     </div>
     
     <div id ="block-text">
-      <p> Based on these the takeaways described in the user analysis section, I constructed two personas: Impatient Immanuel and Social Sophia.
-        These personas are represetned in four-quadrant empathy maps below.</p>
-      </div>
+      <p>Based on these the takeaways described in the user analysis section, 
+        I constructed two personas: Decisive Donna and Social Sophia.</p>
+      <h4> Driven Donna:</h4>
+      <img src="assets-p&s/DD Empathy Map.png" alt="Empathy Map for Driven Donna">
+      <p> More About Donna: 
+        <ul>
+        <li>Driven Donna's main issue with the interface occurs when either her typical drink of choice is watered down, or
+        the interface is causing her to have to spend more time at the machine then normal.</li>
+        <li> Donna represents the users who value consistency over variety when using the Coke Freestyle machine. Despite the wide range of drinks available, she prefers to stick to the same one.</li>
+        <li> Rather than valuing the machine for its customization features, she appreicates its reliability in delivering her favorite drink - when it works as expected. </li>
+        </ul>
+        </p>
+        </div>
+
+      <div id="content-heading">
+      <h3> persona #2: Social Sebastian Donna </h3>
     </div>
+     <div id ="block-text">
+
+      <img src="assets-p&s/SS Empathy Map.png" alt="Empathy Map for Social Sebastian">
+      <p> More About Sebastian:
+          <li> Social Sebastian loves how easy it is to talk to his friends while using the Coke Freestyle machine. Nothing
+        about the interface is too confusing where he would have to end his ongoing conversations.He sometimes even lets his friends pick
+        his drink when he is in the mood for something new. </li>
+        <li> Sebastian represents the users who both like to swtich up their 
+          drink choices from time to time and use the machine with friends. Sebastian's 
+          interaction with the machine is typically longer than an individual user because he gets distracted by his friends.</li>
+      </p>
+      </div>
+      </div>
 
 
     <div class="section-container" id="storyboards">
       <div id= content-heading>
-        <h3> storyboards </h3>
+        <h3> Social Sebastian's Storyboard </h3>
       </div>
       <div id="block-text">
+        <p> Using the information from the Social Sebastian Persona as well as the information gained from user interview and obervations, I curated the following storyboard. </p>
+        <img src="assets-p&s/storyboard 2_page-0001.jpg"  alt="Storyboard for Social Sebastian" width="90%" height="100%">
+        </object>
       </div>
     </div>
 
