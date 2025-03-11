@@ -176,7 +176,7 @@ h5{
 }
 
 .answer {
-  display: none;
+  display: block;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   padding:5px;
